@@ -28,3 +28,5 @@ git clone https://github.com/itsmehacker/CardPwn.git
 cd CardPwn
 pip3 install -r requirements.txt
 ```
+##FEATURED
+https://jakecreps.com/2019/05/08/osint-collection-tools-for-pastebin
