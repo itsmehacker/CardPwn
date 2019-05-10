@@ -10,7 +10,7 @@ G = '\033[32m' # green
 C = '\033[36m' # cyan
 W = '\033[0m' # white
 
-version = '1.3'
+version = '1.4'
 
 def banner():
 	os.system('clear')
