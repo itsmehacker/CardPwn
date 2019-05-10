@@ -4,12 +4,41 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic">
   <img src="https://img.shields.io/badge/NetHunter-✔-red.svg?style=plastic">
+  <img src="https://img.shields.io/badge/OSINT-red.svg?style=plastic">
   <h4 align="center">OSINT Tool to find Breached Credit Cards Information</h4>
 </p>
 
 <p align="center">
-  <img src="https://imgur.com/QTnbJzx.png">
+  <img src="https://i.imgur.com/5uzbMGS.jpg">
 </p>
+
+## Description
+
+CardPwn Searches for the breached credit card details avaliable on the following 17 Websites:-
+
+```bash
+* cl1p.net        
+* dpaste
+* dumpz.org
+* hastebin
+* ideone
+* pastebin
+* pw.fabian-fingerle.de
+* gist.github.com
+* heypasteit.com
+* ivpaste.com 
+* mysticpaste.com 
+* paste.org.ru 
+* paste2.org 
+* sebsauvage.net/paste/ 
+* slexy.org 
+* squadedit.com 
+* wklej.se 
+* textsnip.com
+```
+
+## FEATURED ON
+<a href="https://jakecreps.com/2019/05/08/osint-collection-tools-for-pastebin/">Jake Creps Blog</a>
 
 ## Disclaimer
 
@@ -28,6 +57,4 @@ git clone https://github.com/itsmehacker/CardPwn.git
 cd CardPwn
 pip3 install -r requirements.txt
 ```
-## FEATURED
-<a href="https://jakecreps.com/2019/05/08/osint-collection-tools-for-pastebin/">Jake Creps Blog</a>
 
