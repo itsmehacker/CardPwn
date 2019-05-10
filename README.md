@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://imgur.com/xLyPyPA.png">
+  <img src="https://imgur.com/5uzbMGS">
 </p>
 
 ## Description
