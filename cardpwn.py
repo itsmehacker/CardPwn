@@ -10,7 +10,7 @@ G = '\033[32m' # green
 C = '\033[36m' # cyan
 W = '\033[0m' # white
 
-version = '1.0'
+version = '1.1'
 
 def banner():
 	os.system('clear')
@@ -88,8 +88,8 @@ def network():
 
 try:
 	banner()
-	#network()
-	#updater()
+	network()
+	updater()
 	cardpwn()
 except KeyboardInterrupt:
 	print ('\n' + R + '[!]' + R + ' Keyboard Interrupt.' + W)
