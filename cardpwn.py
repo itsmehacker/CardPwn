@@ -1,7 +1,7 @@
 import os
 import sys
 import requests
-import subprocess 
+import subprocess
 from googlesearch import search
 
 
@@ -44,29 +44,34 @@ def updater():
 
 def cardpwn():
 	urls = []
+	qlist = []
+	website = []
+	paste_sites = ['cl1p.net', 'dpaste', 'dumpz.org', 'hastebin', 'ideone', 'pastebin', 'pw.fabian-fingerle.de','gist.github.com','https://www.heypasteit.com/','ivpaste.com','mysticpaste.com','paste.org.ru','paste2.org','sebsauvage.net/paste/','slexy.org','squadedit.com','wklej.se','textsnip.com']
 	card = input(G + '[+] ' + R +'Enter Card No. -> ' + W)
 	try:
 		val = int(card)
 		if len(str(val)) >= 12 and len(str(val)) <= 19:
-			for url in search('pastebin {}'.format(card) , stop=10):
-				urls.append(url)
+			for site in paste_sites:
+				query = ('{} "{}"').format(site, card)
+				qlist.append(query)
+			for entry in qlist:
+				for url in search(entry, pause=1.0, stop=20, user_agent='Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'):
+					urls.append(url)
+
 			print('\n' + G + '[>]' + R + ' Getting Dumps...' + W + '\n')
 			for item in urls:
-				if 'pastebin.com' in item:
-					new = item.split('.com')
-					newurl = '.com/raw'.join(new)
-					print(G + '[+] ' + C + newurl + W)
-				else:
-					pass
+				for site in paste_sites:
+					if '{}'.format(site) in item:
+						print(G + '[+] ' + C + item + W)
+
 		else:
 			print('\n' + R + '[!] ' + G + 'Invaild Card Number' + W + '\n')
 			return cardpwn()
-
-		total = len(urls)
-		if total == 0:
-			print (R + '[-] No Open Leaks for this Card Number Found.' + W + '\n')
-		else:
-			print('\n' + G + '[+]' + R + ' Total Dumps Found : ' + W + str(total) + '\n')
+			total = len(urls)
+			if total == 0:
+				print (R + '[-] No Open Leaks for this Card Number Found.' + W + '\n')
+			else:
+				print('\n' + G + '[+]' + R + ' Total Dumps Found : ' + W + str(total) + '\n')
 
 	except ValueError:
 		print('\n' + R + '[!] Invaild Card Number Entered...' + W + '\n')
@@ -83,8 +88,8 @@ def network():
 
 try:
 	banner()
-	network()
-	updater()
+	#network()
+	#updater()
 	cardpwn()
 except KeyboardInterrupt:
 	print ('\n' + R + '[!]' + R + ' Keyboard Interrupt.' + W)
