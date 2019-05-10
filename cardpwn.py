@@ -10,7 +10,7 @@ G = '\033[32m' # green
 C = '\033[36m' # cyan
 W = '\033[0m' # white
 
-version = '1.1'
+version = '1.3'
 
 def banner():
 	os.system('clear')
@@ -52,10 +52,10 @@ def cardpwn():
 		val = int(card)
 		if len(str(val)) >= 12 and len(str(val)) <= 19:
 			for site in paste_sites:
-				query = ('{} "{}"').format(site, card)
+				query = '{} {}'.format(site, card)
 				qlist.append(query)
 			for entry in qlist:
-				for url in search(entry, pause=1.0, stop=20, user_agent='Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'):
+				for url in search(entry, pause=2.0, stop=20, user_agent='Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'):
 					urls.append(url)
 
 			print('\n' + G + '[>]' + R + ' Getting Dumps...' + W + '\n')
