@@ -4,6 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic">
   <img src="https://img.shields.io/badge/NetHunter-✔-red.svg?style=plastic">
+  <img src="https://img.shields.io/badge/OSINT-red.svg?style=plastic">
   <h4 align="center">OSINT Tool to find Breached Credit Cards Information</h4>
 </p>
 
