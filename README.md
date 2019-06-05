@@ -39,6 +39,7 @@ CardPwn Searches for the breached credit card details avaliable on the following
 
 ## FEATURED ON
 <a href="https://jakecreps.com/2019/05/08/osint-collection-tools-for-pastebin/">Jake Creps Blog</a>
+<a href="https://medium.com/week-in-osint/week-in-osint-2019-21-f8c8584106c7">Week in OSINT</a>
 
 ## Disclaimer
 
