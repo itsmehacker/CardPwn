@@ -7,6 +7,12 @@
   <img src="https://img.shields.io/badge/OSINT-red.svg?style=plastic">
   <h4 align="center">OSINT Tool to find Breached Credit Cards Information</h4>
 </p>
+<p align="center">
+  <br>
+  <b>Available in</b>
+  <br>
+  <img src="https://i.imgur.com/IPiAUZi.png">
+</p>
 
 <p align="center">
   <img src="https://i.imgur.com/5uzbMGS.jpg">
