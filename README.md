@@ -64,6 +64,5 @@ git clone https://github.com/itsmehacker/CardPwn.git
 cd CardPwn
 pip3 install -r requirements.txt
 ```
-# Facing any Issue 
-Contact -> <a href="https://t.me/hackerdestination01">Telegram</a>
+
 
