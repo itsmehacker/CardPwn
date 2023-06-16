@@ -63,6 +63,7 @@ This tool is a Proof of Concept and is for Educational Purposes Only.
 git clone https://github.com/itsmehacker/CardPwn.git
 cd CardPwn
 pip3 install -r requirements.txt
+<< Just a test. I'm learning github. Nice doc btw. >>'
 ```
 
 
